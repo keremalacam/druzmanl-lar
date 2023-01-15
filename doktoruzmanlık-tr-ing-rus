@@ -1,0 +1,144 @@
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `druzmanlik`
+--
+
+CREATE TABLE `druzmanlik` (
+  `ID` int(11) NOT NULL,
+  `uzmanlik` varchar(255) COLLATE utf8_turkish_ci DEFAULT NULL,
+  `uzmanlik_en` varchar(255) COLLATE utf8_turkish_ci DEFAULT NULL,
+  `uzmanlik_ru` varchar(255) COLLATE utf8_turkish_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+--
+-- Tablo döküm verisi `druzmanlik`
+--
+
+INSERT INTO `druzmanlik` (`ID`, `uzmanlik`, `uzmanlik_en`, `uzmanlik_ru`) VALUES
+(1, 'İç Hastalıkları\r\n', 'Internal diseases', 'Внутренние болезни'),
+(2, 'Alerji Hastalıkları\r\n', 'Allergy Diseases', 'Аллергические заболевания'),
+(3, 'Endokrinoloji ve Metabolizma Hastalıkları', 'General Practitioner (Temporary coding)', 'Врач общей практики (Временное кодирование)'),
+(4, 'Gastroenteroloji\r\n', 'gastroenterology', 'гастроэнтерология'),
+(5, 'Nefroloji', 'General Practitioner (Temporary coding)', 'Врач общей практики (Временное кодирование)'),
+(6, 'Romatoloji\r\n', 'Rheumatology', 'Ревматология'),
+(7, 'İş ve Meslek Hastalıkları\r\n', 'Occupational and Occupational Diseases', 'Профессиональные и профессиональные заболевания'),
+(8, 'İmmünoloji\r\n', 'Immunology', 'Иммунология'),
+(9, 'Hematoloji', 'General Practitioner (Temporary coding)', 'Врач общей практики (Временное кодирование)'),
+(10, 'Geriatri\r\n', 'Geriatrics', 'Гериатрия'),
+(11, 'Tıbbi Onkoloji\r\n', 'Medical Oncology', 'Медицинская онкология'),
+(12, 'Yoğun Bakım\r\n', 'Intensive care', 'Интенсивная терапия'),
+(13, 'Kardiyoloji\r\n', 'Cardiology', 'Кардиология'),
+(14, 'Göğüs Hastalıkları\r\n', 'Chest Diseases', 'Заболевания грудной клетки'),
+(15, 'Alerjik Göğüs Hastalıkları\r\n', 'Allergic Chest Diseases', 'Аллергические заболевания грудной клетки'),
+(16, 'Enfeksiyon Hastalıkları\r\n', 'Infectious Diseases', 'Инфекционные заболевания'),
+(17, 'Nöroloji\r\n', 'neurology', 'неврология'),
+(18, 'Psikiyatri', 'General Practitioner (Temporary coding)', 'Врач общей практики (Временное кодирование)'),
+(19, 'Çocuk Sağlığı ve Hastalıkları\r\n', 'Child Health and Diseases', 'Здоровье и болезни детей'),
+(20, 'Çocuk Kardiyolojisi\r\n', 'Pediatric Cardiology', 'Детская кардиология'),
+(21, 'Çocuk Metabolizma Hastalıkları\r\n', 'Pediatric Metabolic Diseases', 'Детские метаболические заболевания'),
+(22, 'Çocuk Endokrinolojisi\r\n', 'Pediatric Endocrinology', 'Детская эндокринология'),
+(23, 'Çocuk Hematolojisi\r\n', 'Pediatric Hematology', 'Детская гематология'),
+(24, 'Çocuk Nefrolojisi\r\n', 'Pediatric Nephrology', 'Детская нефрология'),
+(25, 'Çocuk Nörolojisi\r\n', 'Child Neurology', 'Детская неврология'),
+(26, 'Çocuk Alerjisi\r\n', 'Child Allergy', 'Детская аллергия'),
+(27, 'Çocuk Onkolojisi\r\n', 'Pediatric Oncology', 'Детская онкология'),
+(28, 'Çocuk Gastroenteroloji, Hepatoloji ve Beslenme\r\n', 'Pediatric Gastroenterology, Hepatology and Nutrition', 'Детская гастроэнтерология, гепатология и диетология'),
+(29, 'Çocuk Enfeksiyon Hastalıkları\r\n', 'Pediatric Infectious Diseases', 'Детские инфекционные заболевания'),
+(30, 'Neonatoloji\r\n', 'neonatology', 'неонатология'),
+(31, 'Genetik\r\n', 'Genetic', 'Генетический'),
+(32, 'Çocuk Göğüs Hastalıkları\r\n', 'Pediatric Chest Diseases', 'Детские заболевания грудной клетки'),
+(33, 'Çocuk İmmünolojisi\r\n', 'Child Immunology', 'Детская иммунология'),
+(34, 'Çocuk Psikiyatrisi\r\n', 'Child Psychiatry', 'Детская психиатрия'),
+(35, 'Dermatoloji\r\n', 'Dermatology', 'Дерматология'),
+(36, 'Fiziksel Tıp ve Rehabilitasyon\r\n', 'Physical Medicine and Rehabilitation', 'Физическая медицина и реабилитация'),
+(37, 'Genel Cerrahi\r\n', 'General Surgery', 'Общая хирургия'),
+(38, 'Gastroentroloji Cerrahisi\r\n', 'Gastroenterology Surgery', 'Гастроэнтерология Хирургия'),
+(39, 'Çocuk Cerrahisi\r\n', 'Pediatric Surgery', 'Детская хирургия'),
+(40, 'Göğüs Cerrahisi.\r\n', 'Thoracic Surgery.', 'Торакальная хирургия.'),
+(41, 'Kalp ve Damar Cerrahisi\r\n', 'Cardiac surgery', 'Операция на сердце'),
+(42, 'Çocuk Kalp ve Damar Cerrahisi\r\n', 'Pediatric Cardiovascular Surgery', 'Детская сердечно-сосудистая хирургия'),
+(43, 'Beyin ve Sinir Cerrahisi\r\n', 'Brain and Nerve Surgery', 'Хирургия головного мозга и нервов'),
+(44, 'Plastik, Rekonstrüktif ve Estetik Cerrahi\r\n', 'Plastic, Reconstructive and Aesthetic Surgery', 'Пластическая, реконструктивная и эстетическая хирургия'),
+(45, 'El Cerrahisi\r\n', 'Hand Surgery', 'Хирургия рук'),
+(46, 'Ortopedi ve Travmatoloji\r\n', 'Orthopedics and Traumatology', 'Ортопедия и травматология'),
+(47, 'Üroloji\r\n', 'Urology', 'Урология'),
+(48, 'Çocuk Ürolojisi\r\n', 'Pediatric Urology', 'Детская урология'),
+(49, 'Androloji\r\n', 'andrology', 'андрология'),
+(50, 'Kulak-Burun-Boğaz Hastalıkları\r\n', 'Ear, Nose, Throat Diseases', 'Заболевания ушей, носа, горла'),
+(51, 'Göz Hastalıkları\r\n', 'Eye diseases', 'Глазные болезни'),
+(52, 'Kadın Hastalıklarıve Doğum\r\n', 'Gynecology and Obstetrics', 'Гинекология и акушерство'),
+(53, 'Üreme Endokrinolojisi veİnfertilite\r\n', 'Reproductive Endocrinology and Infertility', 'Репродуктивная эндокринология и бесплодие'),
+(54, 'Perinatoloji\r\n', 'perinatology', 'перинатология'),
+(55, 'Anesteziyoloji ve Reanimasyon\r\n', 'Anesthesiology and Reanimation', 'Анестезиология и реанимация'),
+(56, 'Algoloji\r\n', 'algology', 'альгология'),
+(57, 'Radyasyon Onkolojisi\r\n', 'Radiation oncology', 'Радиационная Онкология'),
+(58, 'Radyoloji\r\n', 'Radiology', 'Радиология'),
+(59, 'Nöroradyoloji\r\n', 'neuroradiology', 'нейрорадиология'),
+(60, 'Girişimsel Radyoloji\r\n', 'Interventional radiology', 'Интервенционная радиология'),
+(61, 'Pediyatrik Radyoloji\r\n', 'Pediatric Radiology', 'Детская радиология'),
+(62, 'Nükleer Tıp\r\n', 'Nuclear medicine', 'Ядерная медицина'),
+(63, 'Tıbbi Patoloji\r\n', 'Medical Pathology', 'Медицинская патология'),
+(64, 'Sitopatoloji\r\n', 'cytopathology', 'цитопатология'),
+(65, 'Dermatopatoloji\r\n', 'dermatopathology', 'дерматопатология'),
+(66, 'Nöropatoloji\r\n', 'neuropathology', 'невропатология'),
+(67, 'Tıbbi Genetik\r\n', 'Medical Genetics', 'Медицинская генетика'),
+(68, 'Klinik Sitogenetik\r\n', 'Clinical Cytogenetics', 'Клиническая цитогенетика'),
+(69, 'Klinik Moleküler Genetik\r\n', 'Clinical Molecular Genetics', 'Клиническая молекулярная генетика'),
+(70, 'Klinik Genetik\r\n', 'Clinical Genetics', 'Клиническая генетика'),
+(71, 'Tıbbi Biyokimya\r\n', 'Medical Biochemistry', 'Медицинская биохимия'),
+(72, 'Tıbbi Mikrobiyoloji\r\n', 'Medical Microbiology', 'Медицинская микробиология'),
+(73, 'Tıbbi Parazitoloji\r\n', 'Medical Parasitology', 'Медицинская паразитология'),
+(74, 'Viroloji\r\n', 'Virology', 'Вирусология'),
+(75, 'Mikoloji\r\n', 'mycology', 'микология'),
+(76, 'Tıbbi Farmakoloji\r\n', 'Medical Pharmacology', 'Медицинская фармакология'),
+(77, 'Toksikoloji\r\n', 'Toxicology', 'Токсикология'),
+(78, 'Spor Hekimliği\r\n', 'Sports Medicine', 'Спортивная медицина'),
+(79, 'Askeri Sahra Hekimliği\r\n', 'Military Field Medicine', 'Военно-полевая медицина'),
+(80, 'Hava ve Uzay Hekimliği\r\n', 'Aerospace Medicine', 'Аэрокосмическая медицина'),
+(81, 'Sualtı Hekimliği ve Hiperbarik Tıp\r\n', 'Underwater Medicine and Hyperbaric Medicine', 'Подводная медицина и гипербарическая медицина'),
+(82, 'Acil Tıp\r\n', 'Emergency Medicine', 'Неотложная медицинская помощь'),
+(83, 'Adli Tıp\r\n', 'Forensic Medicine', 'Судебная медицина'),
+(84, 'Halk Sağlığı\r\n', 'public health', 'здравоохранение'),
+(85, 'Epidemiyoloji\r\n', 'epidemiology', 'эпидемиология'),
+(86, 'Çevre Sağlığı\r\n', 'Environmental Health', 'Состояние окружающей среды'),
+(87, 'İşyeri Hekimliği\r\n', 'Occupational Medicine', 'Медицина труда'),
+(88, 'Okul Hekimliği\r\n', 'School Medicine', 'Школьная медицина'),
+(89, 'Fizyoloji\r\n', 'Physiology', 'физиология'),
+(90, 'Aile Hekimliği\r\n', 'Family Medicine', 'Семейная медицина'),
+(91, 'Anatomi\r\n', 'Anatomy', 'Анатомия'),
+(92, 'Embriyoloji ve Histoloji\r\n', 'Embryology and Histology', 'Эмбриология и гистология'),
+(93, 'Ortodonti\r\n', 'Orthodontics', 'Ортодонтия'),
+(94, 'Protetik DişTedavisi\r\n', 'Prosthetic Teeth Treatment', 'Протезирование зубов'),
+(95, 'Ağız, Diş, Çene Hastalıkları ve Cerrahisi\r\n', 'Oral, Dental, Maxillofacial Diseases and Surgery', 'Оральные, стоматологические, челюстно-лицевые заболевания и хирургия'),
+(96, 'Pedodonti\r\n', 'Pedodontics', 'Педодонтия'),
+(97, 'Periodontoloji\r\n', 'periodontology', 'пародонтология'),
+(98, 'Oral Diagnoz Radyoloji\r\n', 'Oral Diagnosis Radiology', 'Оральная диагностика Радиология'),
+(99, 'Diş Hastalıkları ve Tedavisi\r\n', 'Dental Diseases and Treatment', 'Стоматологические заболевания и лечение'),
+(100, 'Hemodiyaliz Kliniği\r\n', 'Hemodialysis Clinic', 'Клиника гемодиализа'),
+(101, 'Pratisyen Hekim (Geçici kodlama)\r\n', 'General Practitioner (Temporary coding)', 'Врач общей практики (Временное кодирование)');
+
+--
+-- Dökümü yapılmış tablolar için indeksler
+--
+
+--
+-- Tablo için indeksler `druzmanlik`
+--
+ALTER TABLE `druzmanlik`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
+--
+
+--
+-- Tablo için AUTO_INCREMENT değeri `druzmanlik`
+--
+ALTER TABLE `druzmanlik`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
